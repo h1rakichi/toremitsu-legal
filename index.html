@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トレミツ - V.P.M トレーニング管理</title>
+  <style>
+    :root {
+      --bg: #09090b;
+      --surface: #18181b;
+      --text: #f4f4f5;
+      --sub: #a1a1aa;
+      --accent: #22d3ee;
+      --border: #27272a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Hiragino Sans', 'Noto Sans JP', system-ui, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    header .tagline {
+      font-size: 0.8rem;
+      color: var(--sub);
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      color: var(--sub);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto 28px;
+    }
+    .btn {
+      display: inline-block;
+      background: #06C755;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.88; }
+    .features {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card .icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .card p { font-size: 0.9rem; color: var(--sub); }
+    .legal-links {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      text-align: center;
+    }
+    .legal-links p { font-size: 0.85rem; color: var(--sub); margin-bottom: 12px; }
+    .legal-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 0 12px;
+    }
+    .legal-links a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: var(--sub);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">トレミツ</div>
+    <div class="tagline">V.P.M トレーニング密度管理</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>重さと回数を超えた、<br><span>「密度」</span>で鍛える。</h1>
+    <p>V.P.M（Volume Per Minute）理論に基づき、トレーニングの質を科学的に計測・管理するLINE公式サービスです。</p>
+    <a class="btn" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">
+      &#43; LINEで友だち追加
+    </a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <div class="icon">⏱</div>
+      <h3>LOGGER — 記録</h3>
+      <p>LINEのトーク画面から1タップで起動。インターバルタイマーと連動し、重量・回数・TUTをその場で記録します。バックグラウンドでも正確に計測します。</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>TACTICS — 分析</h3>
+      <p>蓄積したログからV.P.M・V.P.Sを自動算出。フェーズ（HV／肥大期／筋力期）に対する乖離評価と、次のインターバル設定を具体的にアドバイスします。</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔔</div>
+      <h3>インターバルPush通知</h3>
+      <p>アプリを閉じていても、設定した休憩時間が終わるとLINEで通知。次のセットを逃しません。</p>
+    </div>
+  </section>
+
+  <div class="legal-links">
+    <p>サービスに関する規約・ポリシー</p>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 トレミツ. All rights reserved.
+</footer>
+
+</body>
+</html>
